@@ -1,8 +1,12 @@
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/lx191765461-eng/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/lx191765461-eng/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
 # tiny-chess-01 entry
 
 An original chess engine in a single Python file (standard library only).
-main.py carries the engine as an lzma payload stored in a latin-1 string
-literal (see the coding line) with a two-line unpacker: 3,987 bytes total.
+main.py is the engine packed with make.fun's compress tool — an LZMA
+stream of the readable source inside a small stub: 3,944 bytes total.
 
 The engine: full legal move generation (castling, en passant, promotions),
 negamax alpha-beta with PVS, LMR and null-move pruning, quiescence search
